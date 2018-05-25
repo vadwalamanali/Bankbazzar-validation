@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" />
+	<title></title>
+</head>
+<body>
+<header class="custom-header">
+	<div class="logo">
+		<a href="#">
+			<img src="https://www.bankbazaar.com/images/bankbazaar-logo.png" class="img" alt="bankbazzar" />
+		</a>
+	</div>
+	<nav class="menu-nav">
+		<ul class="menu-left">
+			<li class="loan-menu">
+				<a href="#">LOANS</a>
+				<ul class="child-main-menu">
+					<li>
+						<a href="#">Personal LOANS</a>
+					</li>
+					<li>
+						<a href="#">Home LOANS</a>
+					</li>
+				</ul>
+			</li>
+			<li class="credit-cards-menu">
+				<a href="#">CARDS</a>
+				<ul class="child-main-menu">
+					<li>
+						<a href="#">Credit Cards</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="menu-right">
+			<li>
+				<a href="#">
+					<span class="menu-logo"></span>
+				</a>
+			</li>
+		</ul>
+		<ul class="menu-right short-menu-right">
+				<li>
+					<a href="#" title="login">Login</a>
+				</li>
+		</ul>
+	</nav>
+</header>
+<div class="wrapper creditscore">
+	<h2>Check Your Experian Credit Score</h2>
+	<div class="arrow" data-slide="slide1">
+		<i class="prv"></i>
+		<i class="nxt"></i>
+	</div>
+	<div class="slider">
+		<div>
+			<div class="form-block">
+				<h3>My gender</h3>
+				<form>
+					<div class="form-col-section">
+						<input type="radio" value="male" id="male" name="gender" /> 
+						<label for="male">
+							<span class="male"></span>
+							<span class="info">Male</span>
+						</label>
+					</div>
+					<div class="form-col-section">
+						<input type="radio" value="female" id="female" name="gender" /> 
+						<label for="female">
+							<span class="female"></span>
+							<span class="info">Female</span>
+						</label>
+					</div>
+					<div class="form-btn">
+						<div class="error_msg">Please Select Gender</div>
+						<button class="gender_button  btn" data-buttonSlide="slide1">Get your credit report</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div>
+			<div class="form-block">
+			<div class="space">
+				<h3>My Date of Birth</h3>
+				<form>
+					<div class="input_wrapper">
+						<input type="date" name="dob" id="dob" />
+					</div>
+					<div class="form-btn">
+						<div class="error_msg">Please enter Date of Birth</div>
+						<button class="dob_button btn">Continue</button>
+					</div>
+				</div>	
+				</form>
+			</div>
+		</div>
+		<div>
+			<div class="form-block">
+			<div class="space">
+				<h3>Thank you</h3>
+			</div>
+			</div>	
+		</div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script> 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+<script type="text/javascript" src="js/script.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){	
+	$('.slider').slick({
+		infinite: false,
+		arrows: false
+	});
+});
+</script>
+</body>
+</html>

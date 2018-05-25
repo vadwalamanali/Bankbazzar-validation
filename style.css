@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+	margin:0;
+}
+header{
+	background: #116a9e;
+	height: 54px;
+}
+.custom-header{
+	position: fixed;
+  width: 100%;
+  top: 0; 
+	z-index: 1;
+}
+.logo{
+	float:left;
+	margin: 6px 0 0 10px;
+}
+.logo: a{
+	text-decoration: none;
+  color: #38acc9;
+}
+
+.menu-left{
+	float:left;
+	position:relative;
+	margin:0;
+}
+
+.menu-left li{
+	float:left;
+	position:relative;
+	margin:0 10px;
+	line-height:54px;
+}
+li{
+	list-style-type: none;
+	margin: 0;
+  padding: 0;
+}
+.menu-left li a,.menu-right li a{
+	line-height:normal;
+	color: #fff;
+  text-decoration: none;
+	font-size:14px;
+	cursor:pointer;
+	padding:19px 0;
+}
+.menu-left li a:after{
+	content:"";
+	width:22px;
+	height:8px;
+	background-image:url("https://www.bankbazaar.com/images/common/main-menu-arrow.png");
+	background-repeat: no-repeat;
+	display:inline-block;
+	background-position: center center;
+	-webkit-transform: rotate(0deg);
+}
+.child-main-menu{
+	display:none;
+}
+ul{
+	list-style:none;
+}
+.menu-left  .child-main-menu a{
+	color: #116a9e;
+	display:block;
+	padding:9px 15px 9px 26px;
+	line-height: normal;
+}
+.menu-left li:hover .child-main-menu{
+	display:block;
+	position: absolute;
+  top: 54px;
+  width: 205px;
+	background: #fff;
+  color: #116a9e;
+  border: 1px solid #d4d4d4;
+  padding: 8px 0 10px 0;
+  left: -26px;
+}
+
+.menu-right{
+	float:right;
+	margin:0 16px 0 0;
+}
+.short-menu-right{
+	margin-right:0;
+}
+.menu-right li{
+	float:left;
+	padding-left:21px;
+	position:relative;
+}
+.menu-right>li>a{
+	color: #fff;
+  text-decoration: none;
+  padding: 19px 0;
+  display: block;
+  cursor: pointer;
+}
+.menu-logo{
+	background-image:url("https://www.bankbazaar.com/images/common/menu-sprite-v18.png");
+	background-position: -9px -704px;
+  width: 34px;
+  height: 16px;
+	background-repeat: no-repeat;
+	display:block;
+}
+.prv{
+	position:absolute;
+	top:50%;
+	transform: translateY(-50%) rotate(135deg);
+	padding: 13px;
+	border:solid #fff;
+	border-width: 0 5px 5px 0;
+	box-shadow:none;
+	cursor:pointer;
+	left: 20px;
+	z-index:1;
+	font-size:0;
+	background:transparent;
+}
+.prv:focus{
+	box-shadow:none;
+	outline:none;
+}
+.nxt{
+	position:absolute;
+	top:50%;
+	transform: translateX(-50%) rotate(-45deg);
+	padding: 13px;
+	border:solid #fff;
+	border-width: 0 5px 5px 0;
+	box-shadow:none;
+	cursor:pointer;
+	right: 20px;
+	z-index:1;
+	font-size:0;
+	background:transparent;
+}
+.nxt:focus{
+	box-shadow:none;
+	outline:none;
+}
+
+.creditscore{
+ 
+	background: #3dbfd9;
+	font-family: "Lato", sans-serif;
+	margin-top:54px;
+}
+.creditscore h2{
+	font-size:20px;
+	color: #fff;
+    background: #40e0d0;
+	padding: 10px;
+	text-align:center;
+	
+}
+h2:before {
+	
+    width: 0;
+    height: 0;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    border-bottom: 24px solid;
+    position: absolute;
+    border-bottom-color: #40e0d0;
+    content: "";
+    top: -24px;
+    margin: auto;
+    transform: translateX(-110px);
+    left: 0;
+    right: 0;
+}
+
+.form-block{
+	padding-top: 20px;
+	text-align: center;
+}
+
+h3{
+	margin: 0 0 20px;
+	text-align:center;
+	font-size: 26px;
+	color: #fff;
+}
+.space{
+	padding:135px;
+}
+.form-col-section{
+	float:none;
+	display:inline-block;
+	
+}
+label{
+	width: 250px;
+  display: block;
+	cursor: pointer;
+	position: relative;
+	padding-bottom: 30px;
+}
+label:hover{
+	background-color: #40e0d0;
+}
+ .form-col-section input{
+	opacity: 0;
+    visibility: hidden;
+}
+
+.male:after{
+	display:inline-block;
+	background-image : url("https://www.bankbazaar.com/images/sprite/sprite-gender.png");
+	content: "";
+	background-position:-88px -7px;
+	height:251px;
+	width:80px;
+	margin:auto;
+}
+
+.female:after{
+	display:inline-block;
+	background-image : url("https://www.bankbazaar.com/images/sprite/sprite-gender.png");
+	content: "";
+	background-position:-5px -9px;
+	height:251px;
+	width:71px;
+	margin:auto;
+}
+.info{
+	color: #fff;
+	display:block;
+}
+
+input[type="radio"]:checked+label {
+	background: #40e0d0; 
+	display:block;
+	border-radius:5px;
+}
+
+label:after{
+	content: "";
+  left: 0;
+  width: 18px;
+  height: 18px;
+	border: 1px solid #fff;
+  background: transparent;
+  border-radius: 100%;
+	position: absolute;
+  bottom: 0;
+	margin: auto;
+  right: 0;
+}
+input[type="radio"]:checked+label:after {
+  background: #fff;
+}
+
+.form-btn .btn{
+	margin:20px;
+	font-size: 20px;
+  background-color: #ff5a5f;
+  padding: 8px 20px;
+}
+.btn{
+	border: 0 none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+}
+.input_wrapper{
+	margin:20px;
+}
+.input_wrapper input{
+	padding: 10px;
+	font-size: 14px;
+	border: none;
+	box-shadow: none;
+}
+.error_msg{
+	color: #fff;
+  background: #f1c40f;
+	font-size: 14px;
+	position:relative;
+	display:none;
+	max-width: 240px;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+	.form-col-section {
+		width: 150px;
+	}
+	.form-col-section label {
+		width: 150px;
+	}
+}
